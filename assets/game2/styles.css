@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.myGame {
+  height: 100vh;
+}
+
+canvas {
+  background-color: rgb(49,49,49);
+  max-width: 100%;
+}
+
+.name {
+  font-size: 2.5vmax;
+  padding: 1vmax 2vmax;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: white;
+  margin: 2vmax;
+  cursor: pointer;
+  background-color: #1e79e9;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name:hover {
+  transform: scale(1.2);
+}
+
+.name img {
+  margin-right: 1vmax;
+}
+
+.scoreBoard {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font: 600 1.5vmax "Franklin Gothic Medium", sans-serif;
+  color: white;
+  user-select: none;
+  display: block;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.158);
+  height: 60vh;
+  width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+form > select,
+form select option {
+  padding: 1.5vmax;
+  width: 20vw;
+  font-size: 1.5vmax;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: 'Cursive', sans-serif;
+  color: white;
+  margin: 1vmax 0;
+  transition: all 0.3s ease;
+}
+
+form > input {
+  padding: 1.5vmax;
+  width: 20vw;
+  border-radius: 8px;
+  font-size: 1.5vmax;
+  background-color: #0d0450;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+form > input:hover {
+  background-color: #c13d6d;
+}
+
+form > select:hover,
+form > input:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.gameover {
+  background-color: rgba(141, 77, 157, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3vmax;
+  text-align: center;
+  border-radius: 15px;
+  width: 80vw;
+  max-width: 400px;
+}
+
+.gameover button {
+  padding: 1.5vmax 3vmax;
+  background-color: #3498db;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1vmax;
+}
+
+.gameover button:hover {
+  background-color: #2980b9;
+}
+
+.gameover > div {
+  margin: 2vmax;
+  color: white;
+  font: 600 1.5vmax cursive;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 80vw;
+  }
+
+  form > select,
+  form > input {
+    width: 80vw;
+  }
+
+  .scoreBoard {
+    font-size: 1vmax;
+  }
+}

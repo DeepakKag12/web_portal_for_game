@@ -1,0 +1,97 @@
+/* Basic page styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #1f2a44; /* Dark background for contrast */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #ecf0f1;
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.intro-text {
+  color: #bdc3c7;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.games-section {
+  margin-bottom: 40px;
+}
+
+.game-buttons a {
+  display: inline-block;
+  margin: 15px;
+}
+
+.game-button {
+  padding: 18px 30px;
+  font-size: 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 250px;
+}
+
+.game-button:hover {
+  background-color: #fe4677;
+  transform: scale(1.05);
+}
+
+.game-button:active {
+  transform: scale(0.98);
+}
+
+.team-info {
+  margin-top: 40px;
+}
+
+.team-info h2 {
+  color: #ecf0f1;
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.team-name {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.team-description {
+  font-size: 20px;
+  color: #bdc3c7;
+  margin-bottom: 10px;
+}
+
+.team-info ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 22px;
+  color: #ecf0f1;
+}
+
+.team-info li {
+  margin: 5px 0;
+  font-weight: 500;
+}
